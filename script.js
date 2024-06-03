@@ -37,6 +37,20 @@ function switchTheme(event) {
 // Event Listener
 toggleSwitch.addEventListener('change', switchTheme);
 
+const currentHour = new Date().getHours();
+
+if (currentHour >= 19 || currentHour < 7) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleSwitch.checked = true;
+    toggleIcon.innerHTML = '<span class="toggle-text">Dark Mode</span><i class="fas fa-moon"></i>';
+    localStorage.setItem('theme', 'dark');
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    toggleSwitch.checked = false;
+    toggleIcon.innerHTML = '<span class="toggle-text">Light Mode</span><i class="fas fa-sun"></i>';
+    localStorage.setItem('theme', 'light');
+}
+
 // Check Local Storage For Theme
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
