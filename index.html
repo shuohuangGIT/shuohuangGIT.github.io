@@ -6,6 +6,13 @@
     <title>Shuo Huang Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .icon-link {
+            margin-right: 50px;
+            font-size: 100px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <!-- Dark Mode Switch -->
@@ -69,11 +76,35 @@
     <!-- Contact Section -->
     <section id="Contact">
         <div class="social-icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-codepen"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
+            <i class="fab fa-github icon-link" id="github-icon"></i>
+            <script>
+                document.getElementById('github-icon').onclick = function() {
+                    window.open('https://github.com/shuohuangGIT', '_blank');
+                };
+            </script>
+
+            <i class="fab fa-google icon-link" id="google-icon"></i>
+            <script>
+                document.getElementById('google-icon').onclick = function() {
+                    window.open('https://scholar.google.com/citations?user=SkWouAEAAAAJ&hl=en', '_blank');
+                };
+            </script>
+
+
+            <i class="fab fa-linkedin-in icon-link" id="linkin-icon"></i>
+            <script>
+                document.getElementById('linkin-icon').onclick = function() {
+                    window.open('https://www.linkedin.com/in/shuo-huang-1ab245276/?originalSubdomain=nl', '_blank');
+                };
+            </script>
+            
+            <i class="fas fa-envelope icon-link" id="email-icon"></i>
+            <script>
+                document.getElementById('email-icon').onclick = function() {
+                    window.location.href = 'mailto:your-email@example.com';
+                };
+            </script>
+
         </div>
     </section>
     <!-- Script -->
