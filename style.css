@@ -181,6 +181,18 @@ p {
   color: var(--on-background);
 }
 
+/* .fas {
+  font-size: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+.fas:hover {
+  color: var(--on-background);
+} */
+
 /* Dark Mode Toggle */
 .theme-switch-wrapper {
   display: flex;
