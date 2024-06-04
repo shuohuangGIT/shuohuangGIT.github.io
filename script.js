@@ -115,3 +115,35 @@ function toggleText_statistics() {
         moreText.style.display = "inline";
     }
 }
+
+function toggleText_paper0() {
+    var dots = document.getElementById("dots_paper0");
+    var moreText = document.getElementById("moreText_paper0");
+    var btnText = document.getElementById("toggleButton_paper0");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}
+
+function toggleText_transitiondisk() {
+    var dots = document.getElementById("dots_transitiondisk");
+    var moreText = document.getElementById("moreText_transitiondisk");
+    var btnText = document.getElementById("toggleButton_transitiondisk");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}

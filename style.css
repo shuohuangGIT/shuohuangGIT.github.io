@@ -94,11 +94,11 @@ nav {
 }
 
 a {
-  margin-right: 25px;
+  /* margin-right: 25px; */
   color: var(--primary-color);
   text-decoration: none;
   border-bottom: 3px solid transparent;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 a:hover,
@@ -357,6 +357,13 @@ input:checked + .slider::before {
 #moreText_statistics {
   display: none;
 }
+#moreText_paper0 {
+  display: none;
+}
+#moreText_transitiondisk {
+  display: none;
+}
+
 .show-more {
   color: blue;
   cursor: pointer;
