@@ -73,6 +73,12 @@ h1 {
 h2 {
   color: var(--on-background-alt);
   font-size: 50px;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--on-background-alt);
+  font-size: 30px;
   font-weight: normal;
 }
 
@@ -114,11 +120,15 @@ a:focus {
 .image-container {
   /* border: 1px solid var(--secondary-color); */
   border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 25px;
-  width: 400px;
+  /* padding: 5px 5px; */
+  /* margin-right: 25px; */
+  width: 1200px;
   background: var(--background);
   box-shadow: var(--box-shadow);
+}
+
+#meimage {
+  width: 800px;
 }
 
 .scaled-image {
@@ -127,6 +137,7 @@ a:focus {
 }
 
 img {
+  border-radius: 10px;
   max-width: 100%; /* Limit image width to the container width */
   height: auto; /* Allow height to scale proportionally */
 }
@@ -306,4 +317,12 @@ input:checked + .slider::before {
   background-color: var(--on-background); /* Set the color of the line */
   width: 50%; /* Make the line extend infinitely */
   opacity: .2;
+}
+
+#Publication .horizontal-line {
+  border: 0;
+  height: 1px; /* Set the height of the line */
+  background-color: var(--on-background); /* Set the color of the line */
+  width: 25%; /* Make the line extend infinitely */
+  opacity: .5;
 }
