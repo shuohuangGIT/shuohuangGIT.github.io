@@ -83,3 +83,19 @@ function toggleText() {
         moreText.style.display = "inline";
     }
 }
+
+function toggleText_trappist() {
+    var dots = document.getElementById("dots_trappist");
+    var moreText = document.getElementById("moreText_trappist");
+    var btnText = document.getElementById("toggleButton_trappist");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}
