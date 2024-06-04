@@ -351,6 +351,12 @@ input:checked + .slider::before {
 #moreText {
   display: none;
 }
+#moreText_trappist {
+  display: none;
+}
+#moreText_statistics {
+  display: none;
+}
 .show-more {
   color: blue;
   cursor: pointer;

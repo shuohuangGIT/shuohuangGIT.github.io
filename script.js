@@ -99,3 +99,19 @@ function toggleText_trappist() {
         moreText.style.display = "inline";
     }
 }
+
+function toggleText_statistics() {
+    var dots = document.getElementById("dots_statistics");
+    var moreText = document.getElementById("moreText_statistics");
+    var btnText = document.getElementById("toggleButton_statistics");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}
