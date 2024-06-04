@@ -64,3 +64,22 @@ if (currentTheme) {
         toggleDarkLightMode(true);
     }
 }
+
+
+// my script
+
+function toggleText() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("moreText");
+    var btnText = document.getElementById("toggleButton");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}

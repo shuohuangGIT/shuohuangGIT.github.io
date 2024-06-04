@@ -124,7 +124,7 @@ a:focus {
   /* margin-right: 25px; */
   width: 1200px;
   background: var(--background);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
 }
 
 #meimage {
@@ -140,6 +140,9 @@ img {
   border-radius: 10px;
   max-width: 100%; /* Limit image width to the container width */
   height: auto; /* Allow height to scale proportionally */
+  width: 1200px;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
 }
 
 /* Projects Section */
@@ -204,11 +207,22 @@ button:hover:not(.outline) {
   padding: 30px;
 }
 
+
 p {
   margin-left: 0;
   line-height: 25px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
+  width: 100%;
+}
+
+
+details {
+  margin-left: 0;
+  line-height: 25px;
+  font-size: 25px;
+  text-align: left;
+  width: 100%;
 }
 
 /* Contact Section */
@@ -325,4 +339,19 @@ input:checked + .slider::before {
   background-color: var(--on-background); /* Set the color of the line */
   width: 25%; /* Make the line extend infinitely */
   opacity: .5;
+}
+
+#truncateLongTexts {
+  width: 100%;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  */
+}
+
+#moreText {
+  display: none;
+}
+.show-more {
+  color: blue;
+  cursor: pointer;
 }
