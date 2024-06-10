@@ -339,6 +339,13 @@ input:checked + .slider::before {
   width: 25%; /* Make the line extend infinitely */
   opacity: .5;
 }
+#Activity .horizontal-line {
+  border: 0;
+  height: 0.06vw; /* Set the height of the line */
+  background-color: var(--on-background); /* Set the color of the line */
+  width: 25%; /* Make the line extend infinitely */
+  opacity: .5;
+}
 
 #truncateLongTexts {
   width: 100%;
