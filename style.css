@@ -88,7 +88,7 @@ nav {
   position: fixed;
   font-size: 1.5vw;
   letter-spacing: 0.18vw;
-  padding: 1.5vw;
+  padding: .6vw;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
 }
@@ -254,13 +254,13 @@ details {
   align-items: center;
   z-index: 100;
   position: fixed;
-  right: 1.5vw;
-  top: 1.5vw;
+  right: 1vw;
+  top: .6vw;
 }
 
 .theme-switch-wrapper span {
   margin-right: 0.6vw;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 .toggle-text {

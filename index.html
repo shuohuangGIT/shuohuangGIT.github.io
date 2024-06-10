@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuo Huang Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
         .container {
@@ -29,7 +29,7 @@
     <!-- Dark Mode Switch -->
     <div class="theme-switch-wrapper">
         <span id="toggle-icon">
-            <span style="font-size:1.5vw" class="toggle-text">Light Mode</span>
+            <span style="font-size:1.3vw" class="toggle-text">Light Mode</span>
             <i class="fas fa-sun"></i>
         </span>
         <label class="theme-switch">
@@ -39,15 +39,15 @@
     </div>
     <!-- Navigation -->
     <nav id="nav">
-        <a style="font-size:2vw" href="#Home"><strong>HOME</strong></a>
+        <a style="font-size:1.3vw" href="#Home"><strong>HOME</strong></a>
         &nbsp;&nbsp;
-        <a style="font-size:2vw" href="#About"><strong>ABOUT</strong></a>
+        <a style="font-size:1.3vw" href="#About"><strong>ABOUT</strong></a>
         &nbsp;&nbsp;
-        <a style="font-size:2vw" href="#Publication"><strong>PUBLICATION</strong></a>
+        <a style="font-size:1.3vw" href="#Publication"><strong>PUBLICATION</strong></a>
         &nbsp;&nbsp;
-        <a style="font-size:2vw" href="#Activity"><strong>ACTIVITY</strong></a>
+        <a style="font-size:1.3vw" href="#Activity"><strong>ACTIVITY</strong></a>
         &nbsp;&nbsp;
-        <a style="font-size:2vw" href="#Contact"><strong>CONTACT</strong></a>
+        <a style="font-size:1.3vw" href="#Contact"><strong>CONTACT</strong></a>
     </nav>
 
     <div class="container">
@@ -225,6 +225,12 @@
                     };
                 </script>
 
+                <i class="fab fa-orcid icon-link" style="color:#A6CE39;" id="orcid-icon"></i>
+                <script>
+                    document.getElementById('orcid-icon').onclick = function() {
+                        window.open('https://orcid.org/0000-0002-0054-8880', '_blank');
+                    };
+                </script>
 
                 <i class="fab fa-linkedin-in icon-link" id="linkin-icon"></i>
                 <script>
@@ -239,6 +245,15 @@
                         window.location.href = 'mailto:shuang@strw.leidenuniv.nl';
                     };
                 </script>
+                
+                <i class="fab fa-instagram icon-link" id="ins-icon"></i>
+                <script>
+                    document.getElementById('ins-icon').onclick = function() {
+                        window.open('https://www.instagram.com/heysure567/', '_blank');
+                    };
+                </script>
+                
+                
 
             </div>
         </section>
