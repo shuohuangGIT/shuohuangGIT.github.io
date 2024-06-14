@@ -4,7 +4,10 @@ const toggleIcon = document.getElementById('toggle-icon');
 const image1 = document.getElementById('image1');
 // const image2 = document.getElementById('image2');
 // const image3 = document.getElementById('image3');
-const textBox = document.getElementById('text-box');
+// const textBox = document.getElementById('text-box');
+// const textBox2 = document.getElementById('text-box-trappist');
+// const textBox3 = document.getElementById('text-box-lamost');
+// const textBox4 = document.getElementById('text-box-statistic');
 
 // Dark or Light Images
 function imageMode(color) {
@@ -14,8 +17,12 @@ function imageMode(color) {
 };
 
 function toggleDarkLightMode(isDark) {
-    nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
-    textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 75%)' : 'rgb(0 0 0 / 75%)';
+    // nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
+    // textBox.style.backgroundColor = isDark ? 'rgb(0 0 0 / 75%)' : 'rgb(255 255 255 / 75%)' ;
+    // textBox2.style.backgroundColor = isDark ? 'rgb(0 0 0 / 75%)' : 'rgb(255 255 255 / 75%)' ;
+    // textBox3.style.backgroundColor = isDark ? 'rgb(0 0 0 / 75%)' : 'rgb(255 255 255 / 75%)' ;
+    // textBox4.style.backgroundColor = isDark ? 'rgb(0 0 0 / 75%)' : 'rgb(255 255 255 / 75%)' ;
+
     toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
     isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');;
     isDark ? imageMode('dark') : imageMode('light');
