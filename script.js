@@ -44,20 +44,18 @@ function switchTheme(event) {
 // Event Listener
 toggleSwitch.addEventListener('change', switchTheme);
 
-const currentHour = new Date().getHours();
-
-if (currentHour >= 19 || currentHour < 7) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    toggleSwitch.checked = true;
-    localStorage.setItem('theme', 'dark');
-    toggleDarkLightMode(true);
-} else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    toggleSwitch.checked = false;
-    localStorage.setItem('theme', 'light');
-    toggleDarkLightMode(false);
-    
-}
+// const currentHour = new Date().getHours();
+// if (currentHour >= 19 || currentHour < 7) {
+//     document.documentElement.setAttribute('data-theme', 'dark');
+//     toggleSwitch.checked = true;
+//     localStorage.setItem('theme', 'dark');
+//     toggleDarkLightMode(true);
+// } else {
+//     document.documentElement.setAttribute('data-theme', 'light');
+//     toggleSwitch.checked = false;
+//     localStorage.setItem('theme', 'light');
+//     toggleDarkLightMode(false);
+// }
 
 // Check Local Storage For Theme
 const currentTheme = localStorage.getItem('theme');
