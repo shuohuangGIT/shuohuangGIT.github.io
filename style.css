@@ -382,7 +382,9 @@ input:checked + .slider::before {
 #moreText_transitiondisk {
   display: none;
 }
-
+#moreText_solar {
+  display: none;
+}
 .show-more {
   color: blue;
   cursor: pointer;

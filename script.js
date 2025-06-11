@@ -93,6 +93,22 @@ function toggleText() {
     }
 }
 
+function toggleText_solar() {
+    var dots = document.getElementById("dots_solar");
+    var moreText = document.getElementById("moreText_solar");
+    var btnText = document.getElementById("toggleButton_solar");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Show less";
+        moreText.style.display = "inline";
+    }
+}
+
 function toggleText_trappist() {
     var dots = document.getElementById("dots_trappist");
     var moreText = document.getElementById("moreText_trappist");
