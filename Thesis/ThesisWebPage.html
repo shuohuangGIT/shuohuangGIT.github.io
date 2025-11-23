@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thesis Chapters</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#3b82f6;
+      --text:#0f172a;
+      --muted:#475569;
+      --radius:10px;
+      --maxwidth:900px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,var(--bg),#eef2ff 200px);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 20px;
+      box-sizing:border-box;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxwidth);
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 8px 30px rgba(15,23,42,0.06);
+      border:1px solid rgba(15,23,42,0.04);
+    }
+    header h1{
+      margin:0 0 6px 0;
+      font-size:1.6rem;
+      letter-spacing:-0.01em;
+    }
+    header p.date{
+      margin:0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+    nav{
+      margin-top:18px;
+    }
+    .section-title{
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      gap:12px;
+      margin:18px 0 8px 0;
+    }
+    .section-title h2{
+      margin:0;
+      font-size:1.05rem;
+      color:var(--text);
+    }
+    .section-title .hint{ color:var(--muted); font-size:0.9rem; }
+    ul,ol{
+      margin:0 0 18px 0;
+      padding-left:1.05rem;
+    }
+    li{
+      margin:8px 0;
+      line-height:1.45;
+      font-size:1rem;
+    }
+    a.link{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:500;
+    }
+    a.link:hover{ text-decoration:underline; }
+    .meta{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+
+    /* responsive tweaks */
+    @media (max-width:560px){
+      .card{padding:18px}
+      header h1{font-size:1.35rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <article class="card" role="main" aria-labelledby="pageTitle">
+      <header>
+        <h1 id="pageTitle">Thesis and Chapters</h1>
+        <p class="date">Nov, 2025</p>
+      </header>
+
+      <nav aria-label="Thesis links">
+        <div class="section-title">
+          <h2>Ph.D. Thesis</h2>
+          <span class="hint">Primary documents</span>
+        </div>
+
+        <ul>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/full_thesis.pdf" target="_blank" rel="noopener">Full thesis</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/propositions.pdf" target="_blank" rel="noopener">Propositions</a></li>
+        </ul>
+
+        <div class="section-title">
+          <h2>Individual Chapters</h2>
+          <span class="hint">Open each chapter separately</span>
+        </div>
+
+        <ol>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch1_intro.pdf" target="_blank" rel="noopener">Chapter 1: Introduction</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch2_resonance.pdf" target="_blank" rel="noopener">Chapter 2: When, where, and how many exoplanets end up in orbital resonances?</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch3_trappist.pdf" target="_blank" rel="noopener">Chapter 3: The dynamics of the special resonance chain systems and their formation: TRAPPIST-1</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch4_solar.pdf" target="_blank" rel="noopener">Chapter 4: The dynamics of the broken resonance chain systems and their formation: the Solar System</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch5_pps.pdf" target="_blank" rel="noopener">Chapter 5: Birth stellar cluster dynamics matters: planet population synthesis with external photo-evaporation</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/ch6_disk.pdf" target="_blank" rel="noopener">Chapter 6: ALMA signature of closing-spaced pebble-accreting protoplanets in Transition disks</a></li>
+          <li><a class="link" href="https://shuohuanggit.github.io/Theis/bib.pdf" target="_blank" rel="noopener">Bibliography</a></li>
+        </ol>
+
+      </nav>
+    </article>
+  </div>
+</body>
+</html>
